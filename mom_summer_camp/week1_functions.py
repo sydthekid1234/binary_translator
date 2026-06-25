@@ -69,3 +69,11 @@ def is_palindrome(text):
     cleaned = "".join(text.split()).lower()
     return cleaned == cleaned[::-1]
 #print(is_palindrome('boat'))
+
+def safe_divide(a, b):
+    try:
+        return a / be
+    except ZeroDivisionError:
+        print (f"Error. Can't divide {a} by zero.")
+        return none
+print(safe_divide(10, 2))
